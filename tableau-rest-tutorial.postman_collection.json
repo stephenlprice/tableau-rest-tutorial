@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6ea8f572-30b3-4873-b1fc-c10b13917f8a",
+		"_postman_id": "648f6f50-88e9-4bb1-b4dc-9c6256346208",
 		"name": "REST Tutorial",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -1919,8 +1919,13 @@
 					"        const jsonObject = xml2Json(res.text());",
 					"        // obtain the API Key from the response body",
 					"        const apiKey = jsonObject.tsResponse.credentials.$.token;",
+					"        const siteId = jsonObject.tsResponse.credentials.site.$.id;",
+					"",
 					"        // set the variables to the returned value",
 					"        pm.collectionVariables.set(\"api-key\", apiKey);",
+					"        if (!pm.collectionVariables.get(\"site-id\")) {",
+					"           pm.collectionVariables.set(\"site-id\", siteId); ",
+					"        }",
 					"    };",
 					"});",
 					""
