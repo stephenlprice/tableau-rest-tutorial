@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "648f6f50-88e9-4bb1-b4dc-9c6256346208",
+		"_postman_id": "237e2968-e799-4087-b2c1-112e2181b0ef",
 		"name": "REST Tutorial",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -1863,6 +1863,111 @@
 					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.12.xsd\">\n    <error code=\"409008\">\n        <summary>Resource Conflict</summary>\n        <detail>Workbook 'bd1a8294-c3e2-4549-8b88-66cf27d50031' cannot have the capability 'Read' set for group '1ea58fdd-5dbb-4a3f-92f4-4cdce9c805ab' to both 'Allow' and 'Deny'.</detail>\n    </error>\n</tsResponse>"
 				}
 			]
+		},
+		{
+			"name": "Query Data Sources",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/datasources",
+					"host": [
+						"{{server-name}}"
+					],
+					"path": [
+						"api",
+						"{{api-version}}",
+						"sites",
+						"{{site-id}}",
+						"datasources"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/datasources",
+							"host": [
+								"{{server-name}}"
+							],
+							"path": [
+								"api",
+								"{{api-version}}",
+								"sites",
+								"{{site-id}}",
+								"datasources"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 24 Sep 2021 19:32:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "Tableau"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "X-Tableau",
+							"value": "Tableau Server"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"NON\""
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer-when-downgrade"
+						},
+						{
+							"key": "Content-Security-Policy-Report-Only",
+							"value": "connect-src * https://*.tiles.mapbox.com https://api.mapbox.com; default-src blob:; font-src * data:; frame-src * data:; img-src * data: blob:; object-src data:; report-uri /vizql/csp-report; script-src * blob:; style-src * 'unsafe-inline'"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <pagination pageNumber=\"1\" pageSize=\"100\" totalAvailable=\"2\"/>\n    <datasources>\n        <datasource contentUrl=\"Sample-Superstore\" createdAt=\"2021-08-04T19:11:34Z\" description=\"\" encryptExtracts=\"false\" hasExtracts=\"true\" id=\"dff4f512-3b9c-4b30-a5b9-88a2aa8c7a61\" isCertified=\"false\" name=\"Sample-Superstore\" type=\"excel-direct\" updatedAt=\"2021-08-04T19:11:34Z\" useRemoteQueryAgent=\"false\" webpageUrl=\"http://52.88.5.80/#/site/acortez/datasources/171847\">\n            <project id=\"a780c441-8685-4f54-a100-7b901842604c\" name=\"Examples\"/>\n            <owner id=\"2d6a6526-5feb-4398-9869-1d76bd74623d\"/>\n            <tags/>\n        </datasource>\n        <datasource contentUrl=\"Premier_league_player_data\" createdAt=\"2021-08-04T19:15:38Z\" description=\"\" encryptExtracts=\"false\" hasExtracts=\"true\" id=\"483a8680-ed5e-453d-8d4d-558d2f439f66\" isCertified=\"false\" name=\"Premier_league_player_data\" type=\"excel-direct\" updatedAt=\"2021-08-04T19:15:39Z\" useRemoteQueryAgent=\"false\" webpageUrl=\"http://52.88.5.80/#/site/acortez/datasources/171848\">\n            <project id=\"a780c441-8685-4f54-a100-7b901842604c\" name=\"Examples\"/>\n            <owner id=\"2d6a6526-5feb-4398-9869-1d76bd74623d\"/>\n            <tags/>\n        </datasource>\n    </datasources>\n</tsResponse>"
+				}
+			]
 		}
 	],
 	"auth": {
@@ -1901,7 +2006,7 @@
 					"",
 					"// authenticate and obtain token value to be set as 'api-key' collection variable",
 					"pm.sendRequest({",
-					"    url: pm.collectionVariables.get(\"server-name\") + '/api/' + pm.collectionVariables.get(\"api-version\") + '/auth/signin',",
+					"    url: pm.environment.get(\"server-name\") + '/api/' + pm.environment.get(\"api-version\") + '/auth/signin',",
 					"    method: 'POST',",
 					"    header: {",
 					"        'content-type': 'application/xml',",
@@ -1923,9 +2028,7 @@
 					"",
 					"        // set the variables to the returned value",
 					"        pm.collectionVariables.set(\"api-key\", apiKey);",
-					"        if (!pm.collectionVariables.get(\"site-id\")) {",
-					"           pm.collectionVariables.set(\"site-id\", siteId); ",
-					"        }",
+					"        pm.collectionVariables.set(\"site-id\", siteId);",
 					"    };",
 					"});",
 					""
@@ -1943,14 +2046,6 @@
 		}
 	],
 	"variable": [
-		{
-			"key": "server-name",
-			"value": "https://10ax.online.tableau.com"
-		},
-		{
-			"key": "api-version",
-			"value": "3.12"
-		},
 		{
 			"key": "site-id",
 			"value": ""
