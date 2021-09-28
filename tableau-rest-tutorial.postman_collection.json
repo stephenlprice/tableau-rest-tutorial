@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "237e2968-e799-4087-b2c1-112e2181b0ef",
+		"_postman_id": "c07aabb3-141d-499b-a24e-55c8c2b443d7",
 		"name": "REST Tutorial",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -1966,6 +1966,659 @@
 					],
 					"cookie": [],
 					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <pagination pageNumber=\"1\" pageSize=\"100\" totalAvailable=\"2\"/>\n    <datasources>\n        <datasource contentUrl=\"Sample-Superstore\" createdAt=\"2021-08-04T19:11:34Z\" description=\"\" encryptExtracts=\"false\" hasExtracts=\"true\" id=\"dff4f512-3b9c-4b30-a5b9-88a2aa8c7a61\" isCertified=\"false\" name=\"Sample-Superstore\" type=\"excel-direct\" updatedAt=\"2021-08-04T19:11:34Z\" useRemoteQueryAgent=\"false\" webpageUrl=\"http://52.88.5.80/#/site/acortez/datasources/171847\">\n            <project id=\"a780c441-8685-4f54-a100-7b901842604c\" name=\"Examples\"/>\n            <owner id=\"2d6a6526-5feb-4398-9869-1d76bd74623d\"/>\n            <tags/>\n        </datasource>\n        <datasource contentUrl=\"Premier_league_player_data\" createdAt=\"2021-08-04T19:15:38Z\" description=\"\" encryptExtracts=\"false\" hasExtracts=\"true\" id=\"483a8680-ed5e-453d-8d4d-558d2f439f66\" isCertified=\"false\" name=\"Premier_league_player_data\" type=\"excel-direct\" updatedAt=\"2021-08-04T19:15:39Z\" useRemoteQueryAgent=\"false\" webpageUrl=\"http://52.88.5.80/#/site/acortez/datasources/171848\">\n            <project id=\"a780c441-8685-4f54-a100-7b901842604c\" name=\"Examples\"/>\n            <owner id=\"2d6a6526-5feb-4398-9869-1d76bd74623d\"/>\n            <tags/>\n        </datasource>\n    </datasources>\n</tsResponse>"
+				}
+			]
+		},
+		{
+			"name": "Query Views for a Site",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/views",
+					"host": [
+						"{{server-name}}"
+					],
+					"path": [
+						"api",
+						"{{api-version}}",
+						"sites",
+						"{{site-id}}",
+						"views"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/views",
+							"host": [
+								"{{server-name}}"
+							],
+							"path": [
+								"api",
+								"{{api-version}}",
+								"sites",
+								"{{site-id}}",
+								"views"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Sep 2021 22:22:22 GMT"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"NON\""
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Server",
+							"value": "Tableau"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Tableau",
+							"value": "Tableau Server"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3406"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <pagination pageNumber=\"1\" pageSize=\"100\" totalAvailable=\"54\"/>\n    <views>\n        <view id=\"0bc687c4-2241-403e-8461-fe5d5665f170\" name=\"Obesity\" contentUrl=\"Regional/sheets/Obesity\" createdAt=\"2021-04-27T07:23:53Z\" updatedAt=\"2021-04-27T07:23:53Z\" viewUrlName=\"Obesity\">\n            <workbook id=\"5c01a37f-5c63-4620-a850-c49716d36cfc\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"ae202c83-be27-4a21-841a-ba34e45970de\" name=\"College\" contentUrl=\"Regional/sheets/College\" createdAt=\"2021-04-27T07:23:53Z\" updatedAt=\"2021-04-27T07:23:53Z\" viewUrlName=\"College\">\n            <workbook id=\"5c01a37f-5c63-4620-a850-c49716d36cfc\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"ab122287-48ea-46db-bfee-e074ea78cd0b\" name=\"Global Temperatures\" contentUrl=\"Regional/sheets/GlobalTemperatures\" createdAt=\"2021-04-27T07:23:53Z\" updatedAt=\"2021-04-27T07:23:53Z\" viewUrlName=\"GlobalTemperatures\">\n            <workbook id=\"5c01a37f-5c63-4620-a850-c49716d36cfc\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"6c21c74b-ba8e-4da0-890f-5a1267a6000b\" name=\"Flight Delays\" contentUrl=\"Regional/sheets/FlightDelays\" createdAt=\"2021-04-27T07:23:53Z\" updatedAt=\"2021-04-27T07:23:53Z\" viewUrlName=\"FlightDelays\">\n            <workbook id=\"5c01a37f-5c63-4620-a850-c49716d36cfc\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"0e8af471-54d3-447e-a7d3-f485695efb76\" name=\"Economy\" contentUrl=\"Regional/sheets/Economy\" createdAt=\"2021-04-27T07:23:53Z\" updatedAt=\"2021-04-27T07:23:53Z\" viewUrlName=\"Economy\">\n            <workbook id=\"5c01a37f-5c63-4620-a850-c49716d36cfc\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"852437ec-e2c9-41a7-9a6e-156f84d0d6b6\" name=\"Stocks\" contentUrl=\"Regional/sheets/Stocks\" createdAt=\"2021-04-27T07:23:53Z\" updatedAt=\"2021-04-27T07:23:53Z\" viewUrlName=\"Stocks\">\n            <workbook id=\"5c01a37f-5c63-4620-a850-c49716d36cfc\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"25fa0007-4bd9-41d2-99c0-6988e3540d9d\" name=\"Overview\" contentUrl=\"Superstore/sheets/Overview\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"Overview\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"ecd942b2-93b2-43ad-b9e6-d32fe5bcffb8\" name=\"Product\" contentUrl=\"Superstore/sheets/Product\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"Product\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"afedfc93-cedf-4e18-84dd-e38fee7d1929\" name=\"Customers\" contentUrl=\"Superstore/sheets/Customers\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"Customers\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"04206c0f-9866-460d-bfc0-cc0599cf332b\" name=\"Shipping\" contentUrl=\"Superstore/sheets/Shipping\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"Shipping\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"fa812318-f866-4ede-b2b4-e38bcd11f722\" name=\"Performance\" contentUrl=\"Superstore/sheets/Performance\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"Performance\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"f4d43c22-e5d8-473f-a33a-a09ea38bfa56\" name=\"Commission Model\" contentUrl=\"Superstore/sheets/CommissionModel\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"CommissionModel\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"0eab7004-956b-45e9-814d-247f52c39347\" name=\"Order Details\" contentUrl=\"Superstore/sheets/OrderDetails\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"OrderDetails\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"8092cc40-7517-4eb1-82a8-e4d1e24ab45d\" name=\"Forecast\" contentUrl=\"Superstore/sheets/Forecast\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"Forecast\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"0454cf9a-4d87-4557-a9dd-ce1e7688c5c3\" name=\"What If Forecast\" contentUrl=\"Superstore/sheets/WhatIfForecast\" createdAt=\"2021-04-27T07:23:57Z\" updatedAt=\"2021-04-27T07:23:57Z\" viewUrlName=\"WhatIfForecast\">\n            <workbook id=\"2e958302-1fe9-45b8-bb60-9971696fdd5d\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\"/>\n            <tags/>\n            <location id=\"9cd1f359-8c1f-4906-9f86-59a059f91827\" type=\"Project\"/>\n        </view>\n        <view id=\"60ee9fb4-46cf-4d15-9468-dc417bdef2c9\" name=\"Greenlight Profit Dashboard\" contentUrl=\"ProfitabilityDashboard/sheets/GreenlightProfitDashboard\" createdAt=\"2021-04-27T08:37:36Z\" updatedAt=\"2021-04-27T23:58:53Z\" viewUrlName=\"GreenlightProfitDashboard\">\n            <workbook id=\"45022dec-ab7d-42fc-aa6c-c74bab58397f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"48be6782-5995-4c61-9033-94e6569339b6\" name=\"Categories\" contentUrl=\"ProfitabilityDashboard/sheets/Categories\" createdAt=\"2021-04-27T08:37:36Z\" updatedAt=\"2021-04-27T23:58:53Z\" viewUrlName=\"Categories\">\n            <workbook id=\"45022dec-ab7d-42fc-aa6c-c74bab58397f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"000cf127-d3e1-41f5-a54a-9aa7c7f53cc4\" name=\"Profit vs Quantity\" contentUrl=\"ProfitabilityDashboard/sheets/ProfitvsQuantity\" createdAt=\"2021-04-27T08:37:36Z\" updatedAt=\"2021-04-27T23:58:53Z\" viewUrlName=\"ProfitvsQuantity\">\n            <workbook id=\"45022dec-ab7d-42fc-aa6c-c74bab58397f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"a3011025-19fa-40cc-83f7-0ab4a2238a47\" name=\"Map\" contentUrl=\"ProfitabilityDashboard/sheets/Map\" createdAt=\"2021-04-27T08:37:36Z\" updatedAt=\"2021-04-27T23:58:54Z\" viewUrlName=\"Map\">\n            <workbook id=\"45022dec-ab7d-42fc-aa6c-c74bab58397f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"c7f68663-1ef3-491e-a68b-e2b69f62da99\" name=\"Weekly Metrics\" contentUrl=\"ProfitabilityDashboard/sheets/WeeklyMetrics\" createdAt=\"2021-04-27T08:37:36Z\" updatedAt=\"2021-04-27T23:58:54Z\" viewUrlName=\"WeeklyMetrics\">\n            <workbook id=\"45022dec-ab7d-42fc-aa6c-c74bab58397f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"0ffbf577-3ec9-4bb1-ba89-f8b53c7e4b73\" name=\"Ecological Debt\" contentUrl=\"DataForest/sheets/EcologicalDebt\" createdAt=\"2021-05-12T17:15:15Z\" updatedAt=\"2021-05-12T17:15:15Z\" viewUrlName=\"EcologicalDebt\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"5ff84fb1-55b4-4018-969a-a71858279c66\" name=\"Eco Liability Map\" contentUrl=\"DataForest/sheets/EcoLiabilityMap\" createdAt=\"2021-05-12T17:15:15Z\" updatedAt=\"2021-05-12T17:15:15Z\" viewUrlName=\"EcoLiabilityMap\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"dfc1a863-6385-4a81-bf62-e83e7252552a\" name=\"Eco Asset Map\" contentUrl=\"DataForest/sheets/EcoAssetMap\" createdAt=\"2021-05-12T17:15:15Z\" updatedAt=\"2021-05-12T17:15:15Z\" viewUrlName=\"EcoAssetMap\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"c5cc20fd-fcbd-4bb4-a65d-af33e7459b44\" name=\"Eco Balance Map\" contentUrl=\"DataForest/sheets/EcoBalanceMap\" createdAt=\"2021-05-12T17:15:15Z\" updatedAt=\"2021-05-12T17:15:15Z\" viewUrlName=\"EcoBalanceMap\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"fb4d91d5-011b-4796-b7da-96a7b35684e1\" name=\"Metrics over Time\" contentUrl=\"DataForest/sheets/MetricsoverTime\" createdAt=\"2021-05-12T17:15:15Z\" updatedAt=\"2021-05-12T17:15:15Z\" viewUrlName=\"MetricsoverTime\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"7aa2e32e-1974-49f9-a4dc-73b486820a69\" name=\"Distributions\" contentUrl=\"DataForest/sheets/Distributions\" createdAt=\"2021-05-12T17:15:16Z\" updatedAt=\"2021-05-12T17:15:16Z\" viewUrlName=\"Distributions\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"04bad7cb-0ac0-4e13-82cf-2f6f670f32af\" name=\"Highest\" contentUrl=\"DataForest/sheets/Highest\" createdAt=\"2021-05-12T17:15:16Z\" updatedAt=\"2021-05-12T17:15:16Z\" viewUrlName=\"Highest\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"d7cf6418-109c-42fc-bb00-d263fd820f69\" name=\"Lowest\" contentUrl=\"DataForest/sheets/Lowest\" createdAt=\"2021-05-12T17:15:16Z\" updatedAt=\"2021-05-12T17:15:16Z\" viewUrlName=\"Lowest\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"83d35ca2-0fae-46c7-ba50-ece3903b0f26\" name=\"Biocapacity\" contentUrl=\"DataForest/sheets/Biocapacity\" createdAt=\"2021-05-12T17:15:16Z\" updatedAt=\"2021-05-12T17:15:16Z\" viewUrlName=\"Biocapacity\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"75298b21-1333-4ed3-8869-452c9f471fe7\" name=\"Footprint\" contentUrl=\"DataForest/sheets/Footprint\" createdAt=\"2021-05-12T17:15:16Z\" updatedAt=\"2021-05-12T17:15:16Z\" viewUrlName=\"Footprint\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"fdc336af-076e-439f-aa92-611d0610a607\" name=\"Area Charts\" contentUrl=\"DataForest/sheets/AreaCharts\" createdAt=\"2021-05-12T17:15:16Z\" updatedAt=\"2021-05-12T17:15:16Z\" viewUrlName=\"AreaCharts\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"9847d9d5-40e6-4686-9ede-08a47d20989c\" name=\"Area Charts (dark)\" contentUrl=\"DataForest/sheets/AreaChartsdark\" createdAt=\"2021-05-12T17:15:16Z\" updatedAt=\"2021-05-12T17:15:16Z\" viewUrlName=\"AreaChartsdark\">\n            <workbook id=\"16d3bf6d-7317-4213-a7af-1368ddfec9b6\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"9f738771-62aa-44c0-9f57-a7e6d82a6704\" name=\"Opportunity Overview\" contentUrl=\"SalesforceDashboardStarters_OpportunityOverview/sheets/OpportunityOverview\" createdAt=\"2021-05-12T17:15:58Z\" updatedAt=\"2021-05-12T17:18:27Z\" viewUrlName=\"OpportunityOverview\">\n            <workbook id=\"0dba94ff-4ee8-4338-bdd6-425047c61a7a\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"84fecefe-8cf9-4850-8298-09b6cdd17bb0\" name=\"Tooltip - Opportunities\" contentUrl=\"SalesforceDashboardStarters_OpportunityOverview/sheets/Tooltip-Opportunities\" createdAt=\"2021-05-12T17:15:58Z\" updatedAt=\"2021-05-12T17:18:27Z\" viewUrlName=\"Tooltip-Opportunities\">\n            <workbook id=\"0dba94ff-4ee8-4338-bdd6-425047c61a7a\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"459e941b-0658-4952-9d5b-fb3baf1c8c22\" name=\"QUARTERLY CASHFLOW\" contentUrl=\"QuarterlyCashflow/sheets/QUARTERLYCASHFLOW\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"QUARTERLYCASHFLOW\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"7adfa45c-dfdb-4826-9518-fd1b1360e6dd\" name=\"WATERFALL\" contentUrl=\"QuarterlyCashflow/sheets/WATERFALL\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"WATERFALL\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"db7ea194-bf18-4c01-b8eb-fdcf9f2b061c\" name=\"BALANCE\" contentUrl=\"QuarterlyCashflow/sheets/BALANCE\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"BALANCE\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"5fdabfbe-b018-4115-8476-279fc41483c1\" name=\"DETAILS\" contentUrl=\"QuarterlyCashflow/sheets/DETAILS\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"DETAILS\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"d96c266c-0052-43cc-b291-2637ab77f36a\" name=\"TRANSACTION PERIOD\" contentUrl=\"QuarterlyCashflow/sheets/TRANSACTIONPERIOD\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"TRANSACTIONPERIOD\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"a71a7a3b-3efb-4380-8bae-8ee95f4e043b\" name=\"BALANCE BAN\" contentUrl=\"QuarterlyCashflow/sheets/BALANCEBAN\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"BALANCEBAN\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"3455cd4e-682f-4467-b0a2-4e62f543ec0c\" name=\"PERIOD COMPOSITION\" contentUrl=\"QuarterlyCashflow/sheets/PERIODCOMPOSITION\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"PERIODCOMPOSITION\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"afa11084-67aa-4dc1-ac7e-0165e6e152a3\" name=\"PAYMENT METHOD\" contentUrl=\"QuarterlyCashflow/sheets/PAYMENTMETHOD\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"PAYMENTMETHOD\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"bb0f188d-a956-48f9-b35c-062369fd47f5\" name=\"ACCOUNTS\" contentUrl=\"QuarterlyCashflow/sheets/ACCOUNTS\" createdAt=\"2021-05-12T17:19:48Z\" updatedAt=\"2021-05-12T17:19:48Z\" viewUrlName=\"ACCOUNTS\">\n            <workbook id=\"539223dd-375e-4f04-9a5a-af4786444aad\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"151f8294-f79b-4c81-adf8-51a83479c187\"/>\n            <tags/>\n            <location id=\"151f8294-f79b-4c81-adf8-51a83479c187\" type=\"Project\"/>\n        </view>\n        <view id=\"80b90bb7-a422-4fe1-a1d9-0dde506af750\" name=\"Obesity\" contentUrl=\"RegionalSampleWorkbook/sheets/Obesity\" createdAt=\"2021-07-18T20:22:02Z\" updatedAt=\"2021-07-18T20:22:02Z\" viewUrlName=\"Obesity\">\n            <workbook id=\"b230f891-290b-46a2-a7cd-fc478e4b688f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\"/>\n            <tags/>\n            <location id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\" type=\"Project\"/>\n        </view>\n        <view id=\"767acc3f-cb04-4a2e-91d7-d44e02d6bb88\" name=\"College\" contentUrl=\"RegionalSampleWorkbook/sheets/College\" createdAt=\"2021-07-18T20:22:02Z\" updatedAt=\"2021-07-18T20:22:02Z\" viewUrlName=\"College\">\n            <workbook id=\"b230f891-290b-46a2-a7cd-fc478e4b688f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\"/>\n            <tags/>\n            <location id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\" type=\"Project\"/>\n        </view>\n        <view id=\"1034ce2e-84be-432e-afc6-b31acf8dbba9\" name=\"Economy\" contentUrl=\"RegionalSampleWorkbook/sheets/Economy\" createdAt=\"2021-07-18T20:22:02Z\" updatedAt=\"2021-07-18T20:22:02Z\" viewUrlName=\"Economy\">\n            <workbook id=\"b230f891-290b-46a2-a7cd-fc478e4b688f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\"/>\n            <tags/>\n            <location id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\" type=\"Project\"/>\n        </view>\n        <view id=\"fca74724-280d-44d3-9832-a2436b9d76d1\" name=\"Stocks\" contentUrl=\"RegionalSampleWorkbook/sheets/Stocks\" createdAt=\"2021-07-18T20:22:02Z\" updatedAt=\"2021-07-18T20:22:02Z\" viewUrlName=\"Stocks\">\n            <workbook id=\"b230f891-290b-46a2-a7cd-fc478e4b688f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\"/>\n            <tags/>\n            <location id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\" type=\"Project\"/>\n        </view>\n        <view id=\"d3e899fa-01f2-4933-9138-17896e67a840\" name=\"Storms\" contentUrl=\"RegionalSampleWorkbook/sheets/Storms\" createdAt=\"2021-07-18T20:22:02Z\" updatedAt=\"2021-07-18T20:22:02Z\" viewUrlName=\"Storms\">\n            <workbook id=\"b230f891-290b-46a2-a7cd-fc478e4b688f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\"/>\n            <tags/>\n            <location id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\" type=\"Project\"/>\n        </view>\n        <view id=\"68fbb3d7-dd37-46b6-a6f1-9bd6c271e4af\" name=\"Flights\" contentUrl=\"RegionalSampleWorkbook/sheets/Flights\" createdAt=\"2021-07-18T20:22:02Z\" updatedAt=\"2021-07-18T20:22:02Z\" viewUrlName=\"Flights\">\n            <workbook id=\"b230f891-290b-46a2-a7cd-fc478e4b688f\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\"/>\n            <tags/>\n            <location id=\"0a67d4a2-cab9-4701-b359-216939b8dd14\" type=\"Project\"/>\n        </view>\n        <view id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" name=\"Greenlight Profit Dashboard\" contentUrl=\"sample-workbook/sheets/GreenlightProfitDashboard\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"GreenlightProfitDashboard\">\n            <workbook id=\"bd1a8294-c3e2-4549-8b88-66cf27d50031\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\"/>\n            <tags/>\n            <location id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\" type=\"Project\"/>\n        </view>\n        <view id=\"3cffd987-4391-49f0-8865-e8a586cb15ec\" name=\"Categories\" contentUrl=\"sample-workbook/sheets/Categories\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"Categories\">\n            <workbook id=\"bd1a8294-c3e2-4549-8b88-66cf27d50031\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\"/>\n            <tags/>\n            <location id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\" type=\"Project\"/>\n        </view>\n        <view id=\"d9304900-1be0-44b6-bbd4-5b7b313cedcc\" name=\"Profit vs Quantity\" contentUrl=\"sample-workbook/sheets/ProfitvsQuantity\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"ProfitvsQuantity\">\n            <workbook id=\"bd1a8294-c3e2-4549-8b88-66cf27d50031\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\"/>\n            <tags/>\n            <location id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\" type=\"Project\"/>\n        </view>\n        <view id=\"3f2b7d2c-6ac7-4335-a898-e1d41c3fe5f1\" name=\"Map\" contentUrl=\"sample-workbook/sheets/Map\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"Map\">\n            <workbook id=\"bd1a8294-c3e2-4549-8b88-66cf27d50031\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\"/>\n            <tags/>\n            <location id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\" type=\"Project\"/>\n        </view>\n        <view id=\"d7fd7cb3-6d7d-4722-a5f4-24cccae4c40d\" name=\"Weekly Metrics\" contentUrl=\"sample-workbook/sheets/WeeklyMetrics\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"WeeklyMetrics\">\n            <workbook id=\"bd1a8294-c3e2-4549-8b88-66cf27d50031\"/>\n            <owner id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\"/>\n            <project id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\"/>\n            <tags/>\n            <location id=\"e5f30f9a-e2a4-4cee-a4fe-82bba23466ad\" type=\"Project\"/>\n        </view>\n    </views>\n</tsResponse>"
+				}
+			]
+		},
+		{
+			"name": "Query Views for a Workbook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/workbooks/{{workbook-id}}/views",
+					"host": [
+						"{{server-name}}"
+					],
+					"path": [
+						"api",
+						"{{api-version}}",
+						"sites",
+						"{{site-id}}",
+						"workbooks",
+						"{{workbook-id}}",
+						"views"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/workbooks/{{workbook-id}}/views",
+							"host": [
+								"{{server-name}}"
+							],
+							"path": [
+								"api",
+								"{{api-version}}",
+								"sites",
+								"{{site-id}}",
+								"workbooks",
+								"{{workbook-id}}",
+								"views"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Sep 2021 22:28:17 GMT"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"NON\""
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Server",
+							"value": "Tableau"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Tableau",
+							"value": "Tableau Server"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Length",
+							"value": "525"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <views>\n        <view id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" name=\"Greenlight Profit Dashboard\" contentUrl=\"sample-workbook/sheets/GreenlightProfitDashboard\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"GreenlightProfitDashboard\">\n            <tags/>\n        </view>\n        <view id=\"3cffd987-4391-49f0-8865-e8a586cb15ec\" name=\"Categories\" contentUrl=\"sample-workbook/sheets/Categories\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"Categories\">\n            <tags/>\n        </view>\n        <view id=\"d9304900-1be0-44b6-bbd4-5b7b313cedcc\" name=\"Profit vs Quantity\" contentUrl=\"sample-workbook/sheets/ProfitvsQuantity\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"ProfitvsQuantity\">\n            <tags/>\n        </view>\n        <view id=\"3f2b7d2c-6ac7-4335-a898-e1d41c3fe5f1\" name=\"Map\" contentUrl=\"sample-workbook/sheets/Map\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"Map\">\n            <tags/>\n        </view>\n        <view id=\"d7fd7cb3-6d7d-4722-a5f4-24cccae4c40d\" name=\"Weekly Metrics\" contentUrl=\"sample-workbook/sheets/WeeklyMetrics\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"WeeklyMetrics\">\n            <tags/>\n        </view>\n    </views>\n</tsResponse>"
+				},
+				{
+					"name": "Views no Subscriptions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/workbooks/{{workbook-id}}/views",
+							"host": [
+								"{{server-name}}"
+							],
+							"path": [
+								"api",
+								"{{api-version}}",
+								"sites",
+								"{{site-id}}",
+								"workbooks",
+								"{{workbook-id}}",
+								"views"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Sep 2021 22:28:17 GMT"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"NON\""
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Server",
+							"value": "Tableau"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Tableau",
+							"value": "Tableau Server"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Length",
+							"value": "525"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <views>\n        <view id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" name=\"Greenlight Profit Dashboard\" contentUrl=\"sample-workbook/sheets/GreenlightProfitDashboard\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"GreenlightProfitDashboard\">\n            <tags/>\n        </view>\n        <view id=\"3cffd987-4391-49f0-8865-e8a586cb15ec\" name=\"Categories\" contentUrl=\"sample-workbook/sheets/Categories\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"Categories\">\n            <tags/>\n        </view>\n        <view id=\"d9304900-1be0-44b6-bbd4-5b7b313cedcc\" name=\"Profit vs Quantity\" contentUrl=\"sample-workbook/sheets/ProfitvsQuantity\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"ProfitvsQuantity\">\n            <tags/>\n        </view>\n        <view id=\"3f2b7d2c-6ac7-4335-a898-e1d41c3fe5f1\" name=\"Map\" contentUrl=\"sample-workbook/sheets/Map\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"Map\">\n            <tags/>\n        </view>\n        <view id=\"d7fd7cb3-6d7d-4722-a5f4-24cccae4c40d\" name=\"Weekly Metrics\" contentUrl=\"sample-workbook/sheets/WeeklyMetrics\" createdAt=\"2021-09-06T06:00:17Z\" updatedAt=\"2021-09-06T06:00:17Z\" viewUrlName=\"WeeklyMetrics\">\n            <tags/>\n        </view>\n    </views>\n</tsResponse>"
+				}
+			]
+		},
+		{
+			"name": "Query Subscriptions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/subscriptions",
+					"host": [
+						"{{server-name}}"
+					],
+					"path": [
+						"api",
+						"{{api-version}}",
+						"sites",
+						"{{site-id}}",
+						"subscriptions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "0 Subscriptions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/subscriptions",
+							"host": [
+								"{{server-name}}"
+							],
+							"path": [
+								"api",
+								"{{api-version}}",
+								"sites",
+								"{{site-id}}",
+								"subscriptions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Sep 2021 22:31:13 GMT"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"NON\""
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Server",
+							"value": "Tableau"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Tableau",
+							"value": "Tableau Server"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Length",
+							"value": "232"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <pagination pageNumber=\"1\" pageSize=\"100\" totalAvailable=\"0\"/>\n    <subscriptions/>\n</tsResponse>"
+				},
+				{
+					"name": "subscribed to default view",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/subscriptions",
+							"host": [
+								"{{server-name}}"
+							],
+							"path": [
+								"api",
+								"{{api-version}}",
+								"sites",
+								"{{site-id}}",
+								"subscriptions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Sep 2021 22:32:19 GMT"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"NON\""
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Server",
+							"value": "Tableau"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Tableau",
+							"value": "Tableau Server"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Length",
+							"value": "516"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <pagination pageNumber=\"1\" pageSize=\"100\" totalAvailable=\"1\"/>\n    <subscriptions>\n        <subscription id=\"4888e125-77ba-4d2c-95d2-4eb7568831eb\" subject=\"Greenlight Profit Dashboard\" message=\"test subscription\" attachImage=\"true\" attachPdf=\"false\" suspended=\"false\">\n            <content id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" type=\"View\" sendIfViewEmpty=\"true\"/>\n            <schedule id=\"6129bee3-776b-46f1-82c9-559da283f239\" name=\"SSS_86b81e34-fe18-4784-a5df-e4fa31b534cd\"/>\n            <user id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\" name=\"stellopricint@gmail.com\"/>\n        </subscription>\n    </subscriptions>\n</tsResponse>"
+				},
+				{
+					"name": "subscribed to default and public view",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/subscriptions",
+							"host": [
+								"{{server-name}}"
+							],
+							"path": [
+								"api",
+								"{{api-version}}",
+								"sites",
+								"{{site-id}}",
+								"subscriptions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Sep 2021 22:33:38 GMT"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"NON\""
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Server",
+							"value": "Tableau"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Tableau",
+							"value": "Tableau Server"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Length",
+							"value": "566"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <pagination pageNumber=\"1\" pageSize=\"100\" totalAvailable=\"2\"/>\n    <subscriptions>\n        <subscription id=\"4888e125-77ba-4d2c-95d2-4eb7568831eb\" subject=\"Greenlight Profit Dashboard\" message=\"test subscription\" attachImage=\"true\" attachPdf=\"false\" suspended=\"false\">\n            <content id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" type=\"View\" sendIfViewEmpty=\"true\"/>\n            <schedule id=\"6129bee3-776b-46f1-82c9-559da283f239\" name=\"SSS_86b81e34-fe18-4784-a5df-e4fa31b534cd\"/>\n            <user id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\" name=\"stellopricint@gmail.com\"/>\n        </subscription>\n        <subscription id=\"4312831d-f89c-4a2d-8f9c-4af283f1b7d0\" subject=\"Greenlight Profit Dashboard\" message=\"public custom view\" attachImage=\"true\" attachPdf=\"false\" suspended=\"false\">\n            <content id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" type=\"View\" sendIfViewEmpty=\"true\"/>\n            <schedule id=\"6129bee3-776b-46f1-82c9-559da283f239\" name=\"SSS_86b81e34-fe18-4784-a5df-e4fa31b534cd\"/>\n            <user id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\" name=\"stellopricint@gmail.com\"/>\n        </subscription>\n    </subscriptions>\n</tsResponse>"
+				},
+				{
+					"name": "subscribed to default, public and private views",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server-name}}/api/{{api-version}}/sites/{{site-id}}/subscriptions",
+							"host": [
+								"{{server-name}}"
+							],
+							"path": [
+								"api",
+								"{{api-version}}",
+								"sites",
+								"{{site-id}}",
+								"subscriptions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 24 Sep 2021 22:36:37 GMT"
+						},
+						{
+							"key": "P3P",
+							"value": "CP=\"NON\""
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Server",
+							"value": "Tableau"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Tableau",
+							"value": "Tableau Server"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=Edge"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Content-Length",
+							"value": "602"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "<?xml version='1.0' encoding='UTF-8'?>\n<tsResponse xmlns=\"http://tableau.com/api\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://tableau.com/api http://tableau.com/api/ts-api-3.13.xsd\">\n    <pagination pageNumber=\"1\" pageSize=\"100\" totalAvailable=\"3\"/>\n    <subscriptions>\n        <subscription id=\"4888e125-77ba-4d2c-95d2-4eb7568831eb\" subject=\"Greenlight Profit Dashboard\" message=\"test subscription\" attachImage=\"true\" attachPdf=\"false\" suspended=\"false\">\n            <content id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" type=\"View\" sendIfViewEmpty=\"true\"/>\n            <schedule id=\"681602ca-47cf-43fd-b6b7-c7a7872059c3\" name=\"SSS_29032ea0-4c58-4c41-b4a1-d1f50636cd5e\"/>\n            <user id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\" name=\"stellopricint@gmail.com\"/>\n        </subscription>\n        <subscription id=\"4312831d-f89c-4a2d-8f9c-4af283f1b7d0\" subject=\"Greenlight Profit Dashboard\" message=\"public custom view\" attachImage=\"true\" attachPdf=\"false\" suspended=\"false\">\n            <content id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" type=\"View\" sendIfViewEmpty=\"true\"/>\n            <schedule id=\"681602ca-47cf-43fd-b6b7-c7a7872059c3\" name=\"SSS_29032ea0-4c58-4c41-b4a1-d1f50636cd5e\"/>\n            <user id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\" name=\"stellopricint@gmail.com\"/>\n        </subscription>\n        <subscription id=\"9bb848b8-1cb4-4451-bb3c-baffd1267264\" subject=\"Greenlight Profit Dashboard\" message=\"private custom view\" attachImage=\"true\" attachPdf=\"false\" suspended=\"false\">\n            <content id=\"431cd517-0c3e-4850-b902-a4b1461b936f\" type=\"View\" sendIfViewEmpty=\"true\"/>\n            <schedule id=\"681602ca-47cf-43fd-b6b7-c7a7872059c3\" name=\"SSS_29032ea0-4c58-4c41-b4a1-d1f50636cd5e\"/>\n            <user id=\"035f25c8-a419-4a59-ba50-b6a07c9246e1\" name=\"stellopricint@gmail.com\"/>\n        </subscription>\n    </subscriptions>\n</tsResponse>"
 				}
 			]
 		}
